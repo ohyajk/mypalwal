@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <span>INTERNATIONAL</span>
                             </Link>
                         </li>
-                        <DropDown />
+                        {/* <DropDown /> */}
                     </ul>
                 </div>
                 {/* RIGHT NAV */}
