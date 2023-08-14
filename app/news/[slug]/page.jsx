@@ -21,18 +21,18 @@ const page = async ({ params }) => {
     // const authorFetcher = await fetch(`${authorApi}${p.author}`, { cache: 'no-store' })
     // const authorData = await authorFetcher.json()
     // const author = authorData.name
-    console.log(`${api}?slug=${params.slug}`)
     return (
-        <>
+        <section>
+
             {/* Breadcrumb */}
             <div className='flex gap-2 items-center mb-2 bg-news-red/20 px-4 rounded-full'>
                 <button className='flex items-center gap-1 hover:text-news-red'>
-                    <i class='bx bxs-home bx-burst'></i>
+                    <i className='bx bxs-home bx-burst'></i>
                     <h6 className='font-bold'>HOME</h6>
                 </button>
                 <span>/</span>
                 <button className='flex items-center gap-1 hover:text-news-red'>
-                    <i class='bx bxs-castle bx-burst' ></i>
+                    <i className='bx bxs-castle bx-burst' ></i>
                     <h6 className='font-bold'>National</h6>
                 </button>
                 <span>/</span>
@@ -55,9 +55,9 @@ const page = async ({ params }) => {
                 </div>
                 {/* <Image width={800} height={600} src={p.featured_media_src_url} alt='ad' />
                 <p className='text-xl prose content' dangerouslySetInnerHTML={{ __html: p.content.rendered }} ></p>
-                <span>TAGS: {p.tags}</span> */}
+            <span>TAGS: {p.tags}</span> */}
             </article>
-        </>
+        </section>
     )
 }
 
