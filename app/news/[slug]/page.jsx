@@ -53,9 +53,9 @@ const page = async ({ params }) => {
                         </button>
                     </div>
                 </div>
-                <Image width={800} height={600} src={p.featured_media_src_url} alt='ad' />
+                {/* <Image width={800} height={600} src={p.featured_media_src_url} alt='ad' />
                 <p className='text-xl prose content' dangerouslySetInnerHTML={{ __html: p.content.rendered }} ></p>
-                <span>TAGS: {p.tags}</span>
+                <span>TAGS: {p.tags}</span> */}
             </article>
         </>
     )
