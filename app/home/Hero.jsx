@@ -20,7 +20,7 @@ const Hero = async () => {
                 data.map(async (a) => {
                     const first50 = a.excerpt.rendered.slice(0, -16) + '...' + '<span className="text-news-red">Read More</span>'
                     return (
-                        <Link href={`news/${a.slug}`} className=" cursor-pointer p-4 bg-news-white flex flex-col gap-2  rounded-md hover:text-news-red">
+                        <Link href={`news/${a.slug}`} replace={true} className=" cursor-pointer p-4 bg-news-white flex flex-col gap-2  rounded-md hover:text-news-red">
                             <h1 className="text-4xl font-bold">
                                 {a.title.rendered}
                             </h1>
