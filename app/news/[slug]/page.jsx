@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const page = async ({ params }) => {
-    const fetcher = await fetch(`${api}?slug=${params.slug}}`, {
+    const fetcher = await fetch(`${api}?slug=${params.slug}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ const page = async ({ params }) => {
     // const authorFetcher = await fetch(`${authorApi}${p.author}`, { cache: 'no-store' })
     // const authorData = await authorFetcher.json()
     // const author = authorData.name
-    console.log(`${api}?slug=${params.slug}}`)
+    console.log(`${api}?slug=${params.slug}`)
     return (
         <>
             {/* Breadcrumb */}
